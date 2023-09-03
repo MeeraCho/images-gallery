@@ -1,1 +1,12 @@
-print("Hello World")
+from flask import Flask 
+from other_module import fn_from_other_module
+
+# app = Flask(__name__)
+
+fn_from_other_module()
+
+# @app.route("/")
+# def hello():
+#     return "Hello, World!"
+
+app.run(port=5000, debug=True)
