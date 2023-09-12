@@ -7,7 +7,19 @@
   ],
   "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    }
+    },
+  
+  "python.linting.pylintPath": "api/.venv/bin/python3",
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleArgs": [
+    "--max-line-length = 88"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "none",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
 }
 
 
